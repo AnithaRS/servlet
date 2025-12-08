@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout - Food Delivery App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 850px;
+            background: #fff;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .item-box {
+            border: 1px solid #ddd;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bill-box {
+            border: 1px solid #ddd;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-top: 7px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #4CAF50;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .flex {
+            display: flex;
+            gap: 20px;
+        }
+
+        .half {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Checkout</h2>
+
+    <!-- Order Summary -->
+    <div class="section-title">🛍 Order Summary</div>
+
+    <div class="item-box">
+        <span>Paneer Butter Masala</span>
+        <span class="price">₹220</span>
+    </div>
+
+    <div class="item-box">
+        <span>Garlic Naan (2)</span>
+        <span class="price">₹80</span>
+    </div>
+
+    <div class="item-box">
+        <span>Cold Drink</span>
+        <span class="price">₹40</span>
+    </div>
+
+    <!-- Bill Details -->
+    <div class="section-title">💰 Bill Details</div>
+    <div class="bill-box">
+        <p>Item Total: ₹340</p>
+        <p>Delivery Fee: ₹40</p>
+        <p><strong>Grand Total: ₹380</strong></p>
+    </div>
+
+    <!-- Delivery Address -->
+    <div class="section-title">📍 Delivery Address</div>
+    <textarea placeholder="Enter Full Address" required></textarea>
+
+    <div class="flex">
+        <div class="half">
+            <label>City</label>
+            <input type="text" placeholder="Enter City" required>
+        </div>
+        <div class="half">
+            <label>Pincode</label>
+            <input type="number" placeholder="Enter Pincode" required>
+        </div>
+    </div>
+
+    <!-- Payment Method -->
+    <div class="section-title">💳 Payment Method</div>
+    <select required>
+        <option value="">Select Payment Option</option>
+        <option value="cod">Cash On Delivery</option>
+        <option value="upi">UPI</option>
+        <option value="card">Credit / Debit Card</option>
+    </select>
+
+    <!-- Place Order -->
+    <form action="placeOrder" method="post">
+        <button type="submit">Place Order</button>
+    </form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurants</title>
+    <style>
+        body {
+            background: #1c1c1c;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .restaurant-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background: #2b2b2b;
+            border-radius: 15px;
+            padding: 12px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .rating {
+            color: #00ff7f;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .info {
+            font-size: 13px;
+            color: #bdbdbd;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="padding-left: 30px;">Restaurants Near You</h2>
+
+    <div class="restaurant-container">
+
+        <!-- CARD 1 -->
+        <div class="card">
+            <img src="/mnt/data/ea54c0c3-7b50-4183-9b06-de0916d1e2b7.png" alt="Restaurant Image">
+            <div class="name">Magic Momo</div>
+            <div class="rating">⭐ 4.2 • 45-50 mins</div>
+            <div class="info">Momos, Chinese</div>
+            <div class="info">Chhindwara Locality</div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <img src="/mnt/data/ea54c0c3-7b50-4183-9b06-de0916d1e2b7.png" alt="Restaurant Image">
+            <div class="name">Shree Naivedyam</div>
+            <div class="rating">⭐ 4.3 • 40-45 mins</div>
+            <div class="info">North Indian, Chinese</div>
+            <div class="info">Chhindwara City</div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <img src="/mnt/data/ea54c0c3-7b50-4183-9b06-de0916d1e2b7.png" alt="Restaurant Image">
+            <div class="name">The Fusion Lounge</div>
+            <div class="rating">⭐ 4.4 • 50-55 mins</div>
+            <div class="info">North Indian, South Indian</div>
+            <div class="info">Railway Station</div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card">
+            <img src="/mnt/data/ea54c0c3-7b50-4183-9b06-de0916d1e2b7.png" alt="Restaurant Image">
+            <div class="name">Shriji Namkeen</div>
+            <div class="rating">⭐ 3.9 • 40-45 mins</div>
+            <div class="info">Snacks, Beverages</div>
+            <div class="info">Chhindwara City</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
